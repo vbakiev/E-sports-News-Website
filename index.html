@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Everything between the head tag won't be visible for the users including metadata and links to external files and online libraries such as bootstrap and jquery-->
+<head>
+  <title>Fortnite Web Magazine</title>
+  <meta name="description" content="This is a website for Fortnite's community">
+  <meta name="author" content="Veselin Bakiev">
+  <meta name="viewport" content="width = device-width, initial-scale = 1">
+  <meta name="refresh" content="30">
+    <meta charset="UTF-8">
+  <link rel="StyleSheet" type="text/css" href="StyleSheet/style.css">
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+    
+<!-- The body tag is defined below, containing all the visible content for the page-->
+    
+<body>
+    
+    <div class = "grid-container">
+<header>
+	<h1>FortNews</h1>
+	<p>Your daily dose of Fortnite News, Fan Art and more!</p>
+</header>
+
+<!-- This is our navigation html code with <nav> tag with list tag <li> -->
+<nav>
+	<div class="toggle">
+		<i class="fa fa-bars" aria-hidden="true"></i>
+			</div>
+<ul>
+  	<li><a href="index.html">HOME</a></li>
+  	<li><a href="News.html">NEWS</a></li>
+  	<li><a href="eSports.html">ESPORTS</a></li>
+	<li><a href="fanArt.html">FAN ART</a></li>
+	<li><a href="FAQ.html">FAQ</a>
+</li>
+</ul>
+</nav>
+	<!-- Link to the jquery library with a simple click function for the navigation bar from Reference [2] -->
+<script src="https://code.jquery.com/jquery-3.3.1.js">
+		</script>
+	<script>
+	$(document).ready(function(){
+		$('.toggle').click(function(){
+			$('ul').toggleClass('active');
+		})
+	})
+		</script>
+
+<!-- Everything below untill the footer is our main content of the page, each section defined with it's own id under a shared class "homePage"-->  
+        
+<div id="homeContent1">
+    <div class="homePage">
+             <div class="homeImage">
+				 <a href="News.html">
+				 	<img src="Images/homeGameOfTheYear.png" alt="Teaser image of fortnite's new season with a link to news page">
+				 </a>
+		</div>
+		<h2>Fortnite Beats Red Dead Redemption 2, God of War and Many Other Games For Game of the Year! 
+            </h2>
+        <p>Article by CODY GRAVELLE on Nov 20, 2018 </p>
+	</div>
+        </div>
+        
+<div id="homeContent2">
+    <div class="homePage">
+             <div class="homeRoyale">
+				 <a href="eSports.html">
+				 	<img src="Images/homeWinterRoyale.jpg" alt="Image of Winter Royale Tournament Logo with a link to eSports page">
+				 </a>
+		</div>
+            <p>Check out the winners and all the standings for the  for the Fortnite's $1,000,000 winter tournament</p>
+	</div>
+        </div>
+    
+<div id="homeContent3">
+    <div class="homePage">
+             <div class="homePlane">
+				 <a href="News.html">
+				 	<img src="Images/homeSeason7.jpg" alt="Image of the new planes in season 7 with a link to news page">
+				 </a>
+			</div>
+            	<p>Take to the skies in Season 7! Introducing planes, snow map and many more features in the new update</p>
+	</div>
+        </div>
+
+<div id="homeContent4">
+    <div class="homePage">
+             <div class="homeSword">
+				<a href="News.html">
+				 	<img src="Images/homeSword.jpg" alt="Image of the new sword introduced to Fortnite with a link to news page">
+				 </a>
+			</div>
+            	<p>Dive into the drama and the new changes with Patch 7.01 introducing a Mythic melee weapon just a day before a big NA tournament </p>
+	</div>
+        </div>
+        
+<div id="homeContent5">
+    <div class="homePage">
+            <div class="homeArt">
+				<a href="fanArt.html">
+					<img src="Images/homeArt.jpg" alt="Image of an art drawing style of Fortnite from the community with a link to fanArt page">
+				</a>
+			</div>
+          <p>Check out the best fan art drawings, sculptures and ideas from the Fortnite community and Reddit</p>
+	</div>
+</div>
+		
+ <div id="homeContent6">
+	 <div class="homePage">
+		 <div class="related">
+		 <p>RELATED ARTICLES</p>
+			 </div>
+		 
+		 <div class="homeMouse">
+			 <a target="_blank" rel="noopener noreferrer" href="https://fortniteauthority.com/best-mouse-for-fortnite">
+			 <img src="Images/bestMouse.jpg" alt="Image of one of the best mice for competitive fortnite with link to the article">
+			 </a>
+		 </div>
+		 <div class ="homeKey">
+			 <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/watch?v=FZq9W32fLQM">
+			 <img src="Images/homeKeybind.jpg" alt="Image of a keyboard that shows the best keybinds for playing fortnite with link to the video">
+			 </a>
+		 </div>
+		 <div class ="homeSettings">
+			 <a target="_blank" rel="noopener noreferrer" href="https://gearbroz.com/best-settings-fortnite/">
+			 <img src="Images/bestSettings.png" alt="Image of the best Fortnite settings with a link to the article">
+			 </a>
+			 </div>
+		 <div class="articles">
+		 <p>Top 10 tips for beginners!</p>
+		 </div>
+			<div class= "homeYoutube">
+				<iframe src="https://www.youtube.com/embed/DuwCBPl_FQk" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+				</iframe>
+			 </div>
+		 
+		<div class="articles">
+			<a target="_blank" rel="noopener noreferrer" href="https://www.epicgames.com/fortnite/en-US/patch-notes/v7-10-content-update-1">
+		 		<p>	 
+			 		> Treat yourself with presents! Unwrap this new item and discover which set of item/weapons are waiting inside.
+				</p>
+			</a>
+			<a target="_blank" rel="noopener noreferrer" href="https://www.epicgames.com/fortnite/en-US/patch-notes/v7-10">
+				<p>
+					> Explore new Challenges, play in new and old LTM’s, and unlock rewards in this seasonal event, starting January 5!
+				</p>
+			</a>
+		</div>
+	 </div>
+</div>
+
+<!-- And below is our footer with images for social media links-->
+	 
+<footer>
+    <p>Make sure to follow us on social media to keep up with the new changes and information about Fortnite </p>
+<div class="SocialMedia">
+    <div class ="social">
+        <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/FortniteGame/">
+        <img src="Images/homeFacebook.png" alt="Image of Facebook's logo with a link to Fortnite's Facebook page" height="60">
+        </a>
+    </div>
+    <div class="social">
+		<a target="_blank" rel="noopener noreferrer" href="https://twitter.com/fortnitegame">
+        <img src="Images/homeTwitter.png" alt="Image of Twitter's logo with a link to Fortnite's Twitter page" height="60">
+			</a>
+    </div>
+    <div class="social">
+		<a
+		 target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/fortnite/">
+        <img src="Images/homeInstagram.png" alt="Image of Instagram's logo with a link to Fortnite's Instagram page" height="60">
+		</a>
+    </div>
+    <div class="social">
+		<a
+		   target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/user/epicfortnite">
+        <img src="Images/homeYouTube.png" alt="Image of YouTube's logo with a link to Fortnite's YouTube page" height="60">
+			</a>
+    </div>
+        </div>
+</footer>
+        
+</div>
+</body>
+</html>

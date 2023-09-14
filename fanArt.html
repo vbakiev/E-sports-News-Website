@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Everything between the head tag won't be visible for the users including metadata and links to external files and online libraries such as bootstrap and jquery-->
+<head>
+	<title>Fortnite Web Magazine</title>
+  	<meta name="description" content="This is a website for Fortnite's community">
+  	<meta name="author" content="Veselin Bakiev">
+  	<meta name="viewport" content="width = device-width, initial-scale = 1">
+    <meta charset="UTF-8">
+  	<meta name="refresh" content="30">
+  	<link rel="StyleSheet" type="text/css" href="StyleSheet/style.css">
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+    
+<!-- The body tag is defined below, containing all the visible content for the page-->
+    
+<body>
+    
+ <div class = "grid-containerFan">
+	 <header>
+		<h1>FortNews</h1> 
+		<p>Your daily dose of Fortnite News, Fan Art and more!</p>
+	 </header>
+
+<!-- This is our navigation html code with <nav> tag with list tag <li> -->
+<nav>
+	<div class="toggle">
+		<i class="fa fa-bars" aria-hidden="true"></i>
+			</div>
+<ul>
+  	<li><a href="index.html">HOME</a></li>
+  	<li><a href="News.html">NEWS</a></li>
+  	<li><a href="eSports.html">ESPORTS</a></li>
+	<li><a href="fanArt.html">FAN ART</a></li>
+	<li><a href="FAQ.html">FAQ</a></li>
+	</ul>
+</nav>
+		
+	<!-- Link to the jquery library with a simple click function for the navigation bar from Reference [2]  -->
+<script src="https://code.jquery.com/jquery-3.3.1.js">
+     </script>
+	<script>
+	$(document).ready(function(){
+		$('.toggle').click(function(){
+			$('ul').toggleClass('active');
+		})
+	});
+</script>
+
+<!-- Everything below untill the footer is our main content of the page, each section defined with it's own id under a shared class "fanPage"--> 
+		
+		
+<div id="fanContent1">
+    <div class="fanPage">
+		<h2>Best new content creator this month</h2>
+		<p>The best of FireFerix's Art Gallery</p>
+		<a target="_blank" rel="noopener noreferrer" href="https://www.deviantart.com/fireferix">
+  			<img class="fanSlide" src="Images/artDrift.jpg" alt="Fan art drawing of Drift character with link to artist's profil" width="790">
+			<img class="fanSlide" src="Images/artPlane.jpg" alt="Fan art drawing of two fortnite characters next to a plane with link to artist's profil" width="790">
+  			<img class="fanSlide" src="Images/artTree.jpg" alt="Fan art drawing of two fortnite characters next to a tree with link to artist's profil" width="790">
+		</a>
+	</div>
+ </div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+// This for loop will cycle around all the images with the class "fansSlide and display them one by one" from reference [4]//
+	
+function carousel() {
+  var x = document.getElementsByClassName("fanSlide");
+  for (var i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2500); // Rotate images every 3.5 seconds
+}
+</script>
+
+<div id="fanContent2">
+	<div class="fanPage">
+			<div class="related">
+				<p>FEATURED ART THIS WEEK</p>
+				 </div>
+			<p>#MakeArtNotWar drawing by MamotiukA</p>
+		<div class="fanImage">
+			<a target="_blank" rel="noopener noreferrer" href="https://www.deviantart.com/mamotiuka/art/Fortnite-744044510">
+			<img src="Images/artMakeArt.jpg" alt="Make Art Not War fan art drawing with link to artist's profile" width="600">
+			</a>
+		</div>
+			<p>Strategy Poster by u/Liqood</p>
+		<div class="fanImage">
+			<a target="_blank" rel="noopener noreferrer" href="https://www.reddit.com/r/FortNiteBR/comments/a2ozsr/strategy_poster_made_way_back_but_never_posted_it/">
+			<img src="Images/artMap.png" alt="Strategy Poster fan art with link to artist's reddit post" width="600">
+			</a>
+		</div>
+			<p>Gumshoe & Power Chord by ᎾᎳᏞ</p>
+		<div class="fanImage">
+			<a target="_blank" rel="noopener noreferrer" href="https://www.reddit.com/r/FortNiteBR/comments/aaj4tf/gumshoe_power_chord_by_%E1%8E%BE%E1%8E%B3%E1%8F%9E_twitter_polaris_ilu/">
+			<img src="Images/artFire.jpg" alt="Gumshoe & Power Chord fan art image with link to artist's profil" width="600">
+			</a>
+		</div>
+	</div>
+</div>
+		
+<div id="fanContent3">
+	<div class="fanPage">
+		<div class="related">
+		 	<p>Honorable mentions</p>
+		</div>
+	</div>
+</div>
+		
+		
+<div id="fanContent4">
+	<div class="fanPage">
+		<p>Dire character by kenket </p>
+		<a target="_blank" rel="noopener noreferrer" href="https://www.deviantart.com/kenket/art/Dire-768172050">
+			<img src="Images/artDire.jpg" alt="Image of the fortnite character Dire with link to artist's profile " width="600">
+		</a>
+	</div>
+</div>
+		
+<div id="fanContent5">
+	<div class="fanPage">
+		<p>Fortnite Drawing and battle bus by BlondynkiTezGraja </p>
+		<a target="_blank" rel="noopener noreferrer" href="https://www.deviantart.com/blondynkitezgraja/art/Fortnite-Raptor-750172251">
+			<img src="Images/ARTWICK.JPG" alt="Image of the fortnite character John Wick with link to artist's profil" width="600">
+		</a>
+	</div>
+</div>
+		
+<!-- And below is our footer with images for social media links -->
+	 
+<footer>
+    <p>Make sure to follow us on social media to keep up with the new changes and information about Fortnite </p>
+<div class="SocialMedia">
+    <div class ="social">
+        <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/FortniteGame/">
+        <img src="Images/homeFacebook.png" alt="Image of Facebook's logo with a link to Fortnite's Facebook page" height="60">
+        </a>
+    </div>
+    <div class="social">
+		<a target="_blank" rel="noopener noreferrer" href="https://twitter.com/fortnitegame">
+        <img src="Images/homeTwitter.png" alt="Image of Twitter's logo with a link to Fortnite's Twitter page" height="60">
+			</a>
+    </div>
+    <div class="social">
+		<a
+		 target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/fortnite/">
+        <img src="Images/homeInstagram.png" alt="Image of Instagram's logo with a link to Fortnite's Instagram page" height="60">
+		</a>
+    </div>
+    <div class="social">
+		<a
+		   target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/user/epicfortnite">
+        <img src="Images/homeYouTube.png" alt="Image of YouTube's logo with a link to Fortnite's YouTube page" height="60">
+			</a>
+    </div>
+        </div>
+</footer>
+        
+</div>
+</body>
+</html>

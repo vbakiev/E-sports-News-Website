@@ -1,0 +1,768 @@
+/* css for background color for the body element */
+body{
+    background-color: #171f2b;
+}
+
+h2{
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+/* css for header, and header's h1 and p elements including font family*/
+header{
+    background-color: #171f2b;
+    width:100%;
+    height: 100%;
+    color: white;
+    text-align: center;
+    float: left;
+}
+
+header h1{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 10px 0px 0px 0px;
+    text-align: center;
+}
+
+header p{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 10px 0px 5px 0px;
+    font-size: 15px;
+}
+
+/* css for styling the navigation (nav) section with responsive layout*/
+nav{
+	background: #db2020;
+}
+
+ul{
+	width: 80%;
+	margin: 0 auto;
+	padding 0;
+	text-align: center;
+}
+
+ul li{
+	list-style: none;
+	display: inline-block;
+	padding: 15px;
+}
+
+/* highlighting the navigation links in black when hovered over*/
+ul li:hover{
+	background: #171f2b;
+}
+
+ul li a{
+	color: #fff;
+	text-decoration: none;
+}
+.toggle{
+	width: 100%;
+	padding: 10px 20px;
+	background: #db2020;
+	text-align: right;
+	box-sizing: border-box;
+	color: #fff;
+	font-size: 30px;
+	display: none;
+}
+
+@media (max-width: 768px){
+	.toggle{
+		display: block;
+	}
+
+ul{
+	width: 100%;
+	display: none;
+}
+
+ul li{
+	display: block;
+	text-align: center;
+}
+	.active{
+		display: block;
+	}
+}
+
+/* Grid and css for home page/index below*/
+
+nav {grid-area: nav;}
+header {grid-area: header;}
+footer {grid-area: footer;}
+#homeContent1 {grid-area: main1;}
+#homeContent2 {grid-area: main2;}
+#homeContent3 {grid-area: main3;}
+#homeContent4 {grid-area: main4;}
+#homeContent5 {grid-area: main5;}
+#homeContent6 {grid-area: main6;}
+
+/*The two grids below are what makes the website responsive, it arranges the grid-areas depending on the width of the screen similar example from referece [3]*/
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+	max-width: auto;
+    grid-template-areas:
+        'header header header header header header'
+        'nav nav nav nav nav nav'
+        'main1 main1 main1 main1 main1 main1'
+		'main2 main2 main2 main2 main2 main2'
+        'main3 main3 main3 main3 main3 main3'
+		'main4 main4 main4 main4 main4 main4'
+        'main5 main5 main5 main5 main5 main5'
+		'main6 main6 main6 main6 main6 main6'
+        'footer footer footer footer footer footer';
+    background-color: #edeeef;
+}
+
+@media screen and (min-width: 850px){
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+	max-width: auto;
+    grid-template-areas:
+        'header header header header header header'
+        'nav nav nav nav nav nav'
+        'main1 main1 main1 main1 main6 main6'
+        'main2 main2 main3 main3 main6 main6'
+        'main4 main4 main5 main5 main6 main6'
+        'footer footer footer footer footer footer';
+    	background-color: #edeeef;
+	}
+}
+
+/* Styling for home page's content areas with borders */
+
+.homePage{
+    border: 0px;
+    border-bottom: none;
+    border-right:none;
+    position: auto;
+    padding: 5px;
+    margin: 10px 0px 0px 0px;
+	text-align: center;
+}
+
+.homePage h2{
+    margin: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+#homeContent1{
+    border-color: #171f2b;
+    background-color: ;
+    width: auto;
+    height: auto;
+    margin: 17px 10px 0px 10px;
+}
+
+#homeContent2{
+    border-color: #171f2b;
+    width: auto;
+    height: auto;
+    margin: 0px 10px 0px 10px;
+}
+
+#homeContent3{
+    border-color: #171f2b;
+    width: auto;
+    height: auto;
+    margin: 0px 10px 0px 10px;
+}
+
+#homeContent4{
+    border-color: #171f2b;
+    width: auto;
+    height: auto;
+    margin: 0px 10px 0px 10px;
+}
+
+#homeContent5{
+    border-color: #171f2b;
+    width: auto;
+    height: auto;
+    margin: 0px 10px 0px 10px;
+}
+
+#homeContent6{
+    border-color: #171f2b;
+    width: auto;
+    height: auto;
+    margin: 0px 10px 0px 10px;
+}
+
+/* Styling for home page content areas' p elements with font family and text size */
+
+#homeContent1 p{
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    font-size: 14px;
+    text-align: center;
+    margin:5px 0 0 0;
+    color: dimgray;
+}
+
+#homeContent2 p{
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    font-size:17px;
+    text-align: center;
+    margin:5px 0 0 0;
+	font-weight: bold;
+}
+
+#homeContent3 p{
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    font-size: 17;
+    text-align: center;
+    margin:5px 0 0 0;
+	font-weight: bold;
+}
+
+#homeContent4 p{
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    font-size: 17px;
+    text-align: center;
+    margin:5px 0 0 0;
+	font-weight: bold;
+}
+
+#homeContent5 p{
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    font-size: 17;
+    text-align: center;
+    margin:5px 0 0 0;
+	font-weight: bold;
+}
+
+/* Styling for 'Related Articles' subtitle with red background color matching nav*/
+.related p{
+	font-family: Arial, Helvetica, sans-serif;
+	padding: 10px 0px 10px 0px;
+	background-color: #db2020;
+	color: white;
+	font-size: 18px;
+	text-align: center;
+}
+
+.articles p{
+	font-weight: bold;
+	text-align: left;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* Styling for the Relative articles, including borders and space between each*/
+.homeMouse{
+	margin-bottom: 10px;
+	border-bottom: 4px solid;
+    border-color: #171f2b;
+}
+
+.homeKey{
+	margin-bottom: 10px;
+	border-bottom: 4px solid;
+    border-color: #171f2b;
+}
+
+.homeSettings{
+    margin-bottom: 70px;
+	border-bottom: 4px solid;
+    border-color: #171f2b;
+	
+}
+
+/* Stling for responsive embedded youtube videos*/
+
+.homeYoutube{
+	position: relative;
+	padding-bottom: 56.25%; 
+	height: 0;
+	margin-bottom: 12px;
+	border-bottom: 4px solid;
+    border-color: #171f2b;
+}
+.homeYoutube iframe{
+	position: absolute;
+	top:0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	margin-right: 20px;
+}
+
+
+/* Footer styling */
+
+.social{
+    float: left;
+    width: 25%;
+    margin-bottom: 10px;
+	display: inline;
+}
+
+footer{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #171f2b;
+    width:100%;
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 17px;
+}
+
+/* css for responsive images from Referece [1]*/
+img{
+	max-width: 100%;
+	max-height: 100%;
+}
+
+/* Style for removing the underline from links */
+
+.articles a{
+	text-decoration: none;
+}
+
+/* ---Responsive Grid and Css for News Page ----------------------------------------*/
+
+#newsContent1 {grid-area: news1;}
+#newsContent2 {grid-area: news2;}
+#newsContent3 {grid-area: news3;}
+#newsContentText1 {grid-area: newsText1}
+#newsContentText2 {grid-area: newsText2}
+
+/* When the screen size is less than 850px it will display the layout below */
+
+.grid-containerNews {
+    display: grid;
+   	grid-template-columns: repeat(6, 1fr);
+	max-width: auto;
+    grid-template-areas:
+        'header header header header header header'
+        'nav nav nav nav nav nav'
+        'news1 news1 news1 news1 news1 news1'
+        'news2 news2 news2 news2 news2 news2'
+        'news3 news3 news3 news3 news3 news3'
+		'newsText1 newsText1 newsText1 newsText1 newsText1 newsText1'
+        'footer footer footer footer footer footer';
+    background-color: #edeeef;
+}
+
+/* When the screen size is more than 850px it will display the layout below */
+@media screen and (min-width: 850px){
+.grid-containerNews {
+    display: grid;
+   	grid-template-columns: repeat(6, 1fr);
+	max-width: auto;
+    grid-template-areas:
+        'header header header header header header'
+        'nav nav nav nav nav nav'
+        'news1 news1 news1 news1 newsText1 newsText1'
+        'news2 news2 news2 news2 newsText1 newsText1'
+        'news3 news3 news3 news3 newsText1 newsText1'
+        'footer footer footer footer footer footer';
+    	background-color: #edeeef;
+	}
+}
+
+/* Styling for the main content areas for News page with borders and margins */
+#newsContent1{
+    border-bottom: 4px solid;
+    border-color: #171f2b;
+    width: auto;
+    height: auto;
+    margin: 0px 20px 0px 20px;
+	padding-bottom: 2px;
+}
+
+#newsContent2{
+	border-bottom: 4px solid;
+    border-color: #171f2b;
+    width: auto;
+    height: auto;
+    margin: 0px 20px 0px 20px;
+	padding-bottom: 2px;
+}
+
+#newsContent3{
+	border-bottom: 4px solid;
+    border-color: #171f2b;
+    width: auto;
+    height: auto;
+    margin: 0px 20px 0px 20px;
+	padding-bottom: 2px;
+}
+
+#newsContentText1{
+	font-family: Arial, Helvetica, sans-serif;
+	margin: 0px 20px 0px 20px;
+	font-size: 28px;
+}
+
+/* Css for News page main content p elements and img*/
+.newsPage p{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 17px;
+    text-align: justify;
+	word-spacing: 3px;
+}
+
+.newsPage .related p{
+	text-align: center;
+	margin-left: 0px;
+}
+
+.newsPage img{
+	float: left;
+    margin: 0 20px 0px 0;
+}
+
+.authors p{
+	font-family: Arial, Helvetica, sans-serif;
+	color: dimgray;
+	font-size: 15px;
+}
+
+/* These are the hidden panels, they are linked to jquery function to make them appear on click*/
+
+.Panel{
+	display: none;
+	border-bottom: 4px solid;
+    border-color: #171f2b;
+}
+
+.Panel1{
+	display: none;
+	border-bottom: 4px solid;
+    border-color: #171f2b;
+}
+
+.Panel2{
+	display: none;
+	border-bottom: 4px solid;
+    border-color: #171f2b;
+}
+
+
+/* 'Learn more' button css below*/
+.btn button{
+	background-color: white;
+    border: none;
+    color: black;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+/* An aniamtion when the button is pressed and different color for hovering over*/
+
+.btn button:active {
+  transform: translateY(15px);
+}
+
+.btn button:hover {
+    background-color: #db2020;
+    color: rgba(255, 255, 255);
+}
+
+/* The same css for the other button*/
+
+.btn1 button{
+	background-color: white;
+    border: none;
+    color: black;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+/* A small aniamtion when the button is pressed and different color for hovering over*/
+
+.btn1 button:active {
+  transform: translateY(15px);
+}
+
+.btn1 button:hover {
+    background-color: #db2020;
+    color: rgba(255, 255, 255);
+}
+
+.btn2 button{
+	background-color: white;
+    border: none;
+    color: black;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+/* A small aniamtion when the button is pressed and different color for hovering over*/
+
+.btn2 button:active {
+  transform: translateY(15px);
+}
+
+.btn2 button:hover {
+    background-color: #db2020;
+    color: rgba(255, 255, 255);
+}
+
+/* -----Responsive Grid and Css for fanArt Page ----------------------------------------*/
+
+#fanContent1 {grid-area: fan1;}
+#fanContent2 {grid-area: fan2;}
+#fanContent3 {grid-area: fan3;}
+#fanContent4 {grid-area: fan4;}
+#fanContent5 {grid-area: fan5;}
+
+/* When the screen size is less than 850px it will display the layout below */
+
+.grid-containerFan {
+    display: grid;
+   	grid-template-columns: repeat(6, 1fr);
+	max-width: auto;
+    grid-template-areas:
+        'header header header header header header'
+        'nav nav nav nav nav nav'
+        'fan1 fan1 fan1 fan1 fan1 fan1'
+        'fan2 fan2 fan2 fan2 fan2 fan2'
+		'fan3 fan3 fan3 fan3 fan3 fan3'
+        'fan4 fan4 fan4 fan4 fan4 fan4'
+		'fan5 fan5 fan5 fan5 fan5 fan5'
+        'footer footer footer footer footer footer';
+    background-color: #edeeef;
+}
+
+/* When the screen size is more than 850px it will display the layout below */
+
+@media screen and (min-width: 850px){
+.grid-containerFan {
+    display: grid;
+   	grid-template-columns: repeat(6, 1fr);
+	max-width: auto;
+    grid-template-areas:
+        'header header header header header header'
+        'nav nav nav nav nav nav'
+        'fan1 fan1 fan1 fan1 fan2 fan2'
+        'fan3 fan3 fan3 fan3 fan2 fan2'
+        'fan4 fan4 fan5 fan5 fan2 fan2'
+        'footer footer footer footer footer footer';
+    background-color: #edeeef;
+}
+	
+/* css for content's area for fanArt's page */
+}
+#fanContent1{
+	margin: 0px 20px 0px 20px;
+}
+
+#fanContent2{
+	margin: 0px 20px 0px 20px;
+}
+
+#fanContent3{
+	margin: 0px 20px 0px 0px;
+	padding-left: 20px;
+}
+
+#fanContent4{
+	margin: 0px 20px 0px 20px;
+	text-align: center;
+}
+
+#fanContent5{
+	margin: 0px 20px 0px 20px;
+}
+
+/* Stylig for content's areas 'h2','p' and 'a' elements */
+.fanPage h2{
+	font-family: Arial, Helvetica, sans-serif;
+	text-align: left;
+	text-decoration: none;
+}
+
+.fanPage p{
+	padding: 10px 0px 10px 0px;
+	background-color: #171f2b;
+	color: white;
+	font-family: Arial, Helvetica, sans-serif;
+	text-align:center;
+	text-decoration: none;
+}
+
+.fanPage a{
+	text-decoration: none;
+}
+
+
+.fanPage .related p{
+	font-family: Arial, Helvetica, sans-serif;
+	padding: 10px 0px 10px 0px;
+	background-color: #db2020;
+	color: white;
+	font-size: 20px;
+	text-align: center;
+	margin-left: 0px;
+}
+
+/* Css for fanArt's images */
+.fanImage{
+	margin-bottom: 10px;
+	border-bottom: 4px solid;
+    border-color: #171f2b;
+}
+
+/* -----Responsive Grid and Css for eSports Page ----------------------------------------*/
+
+#eSportsContent1 {grid-area: sport1;}
+#eSportsContent2 {grid-area: sport2;}
+#eSportsContent3 {grid-area: sport3;}
+#eSportsContent4 {grid-area: sport4;}
+
+.grid-containerSports {
+    display: grid;
+   	grid-template-columns: repeat(6, 1fr);
+	max-width: auto;
+    grid-template-areas:
+        'header header header header header header'
+        'nav nav nav nav nav nav'
+        'sport1 sport1 sport1 sport1 sport1 sport1'
+        'sport3 sport3 sport3 sport3 sport3 sport3'
+        'sport4 sport4 sport4 sport4 sport4 sport4'
+		'sport2 sport2 sport2 sport2 sport2 sport2 '
+        'footer footer footer footer footer footer';
+    background-color: #edeeef;
+}
+
+@media screen and (min-width: 850px){
+.grid-containerSports {
+    display: grid;
+   	grid-template-columns: repeat(6, 1fr);
+	max-width: auto;
+    grid-template-areas:
+        'header header header header header header'
+        'nav nav nav nav nav nav'
+        'sport1 sport1 sport1 sport1 sport2 sport2'
+        'sport3 sport3 sport3 sport3 sport2 sport2'
+        'sport4 sport4 sport4 sport4 sport2 sport2'
+        'footer footer footer footer footer footer';
+    background-color: #edeeef;
+	}
+}
+
+/* css for content's area for eSport's page */
+
+#eSportsContent1{
+	margin: 0px 20px 0px 20px;
+	text-align: center;
+}
+
+#eSportsContent2{
+	margin: 0px 20px 0px 20px;
+}
+
+#eSportsContent3{
+	margin: 0px 20px 0px 20px;
+}
+
+#eSportsContent4{
+	margin: 0px 20px 0px 20px;
+}
+
+.eSportsPage .related{
+}
+
+.eSportsPage p{
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.eSportsPage h2{
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Css for Responsive embedded twitch video*/
+
+.twitch{
+	position: relative;
+	padding-bottom: 56.25%; 
+	height: 0;
+	margin-bottom: 12px;
+	border-bottom: 4px solid;
+    border-color: #171f2b;
+}
+
+.twitch iframe{
+	position: absolute;
+	top:0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	margin-right: 20px;
+}
+
+/* -----Responsive Grid and Css for FAQ Page ----------------------------------------*/
+
+#faqContent1 {grid-area: faq1;}
+#faqContent2 {grid-area: faq2;}
+#faqContent3 {grid-area: faq3;}
+#eSportsContent4 {grid-area: sport4;}
+
+.grid-containerFAQ {
+    display: grid;
+   	grid-template-columns: repeat(6, 1fr);
+	max-width: auto;
+    grid-template-areas:
+        'header header header header header header'
+        'nav nav nav nav nav nav'
+		'faq2 faq2 faq2 faq2 faq2 faq2'
+		'faq1 faq1 faq1 faq1 faq1 faq1'
+        'faq3 faq3 faq3 faq3 faq3 faq3'
+        'footer footer footer footer footer footer';
+    background-color: #edeeef;
+	}
+
+@media screen and (min-width: 850px){
+.grid-containerFAQ {
+    display: grid;
+   	grid-template-columns: repeat(6, 1fr);
+	max-width: auto;
+    grid-template-areas:
+        'header header header header header header'
+        'nav nav nav nav nav nav'
+        'faq1 faq1 faq1 faq1 faq2 faq2'
+        'faq3 faq3 faq3 faq3 faq2 faq2'
+        'footer footer footer footer footer footer';
+    background-color: #edeeef;
+	}
+}
+
+/* css for content's area for FAQ's page */
+
+#faqContent1{
+	margin: 0px 20px 0px 20px;
+	text-align: center;
+}
+
+.faqPage {
+	margin: 0px 20px 0px 20px;
+}

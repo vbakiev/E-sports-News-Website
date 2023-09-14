@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Everything between the head tag won't be visible for the users including metadata and links to external files and online libraries such as bootstrap and jquery-->
+<head>
+	<title>Fortnite Web Magazine</title>
+  	<meta name="description" content="This is a website for Fortnite's community">
+  	<meta name="author" content="Veselin Bakiev">
+  	<meta name="viewport" content="width = device-width, initial-scale = 1">
+    <meta charset="UTF-8">
+  	<meta name="refresh" content="30">
+  	<link rel="StyleSheet" type="text/css" href="StyleSheet/style.css">
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+    
+<!-- The body tag is defined below, containing all the visible content for the page-->
+    
+<body>
+    
+    <div class = "grid-containerSports">
+<header>
+	<h1>FortNews</h1> 
+	<p>Your daily dose of Fortnite News, Fan Art and more!</p>
+</header>
+
+<!-- This is our navigation html code with <nav> tag with list tag <li> -->
+<nav>
+	<div class="toggle">
+		<i class="fa fa-bars" aria-hidden="true"></i>
+			</div>
+<ul>
+  	<li><a href="index.html">HOME</a></li>
+  	<li><a href="News.html">NEWS</a></li>
+  	<li><a href="eSports.html">ESPORTS</a></li>
+	<li><a href="fanArt.html">FAN ART</a></li>
+	<li><a href="FAQ.html">FAQ</a></li>
+	</ul>
+</nav>
+		
+	<!-- Link to the jquery library with a simple click function for the navigation bar from Reference [2] -->
+<script src="https://code.jquery.com/jquery-3.3.1.js">
+		</script>
+	<script>
+	$(document).ready(function(){
+		$('.toggle').click(function(){
+			$('ul').toggleClass('active');
+		})
+	})
+		</script>
+
+<!-- Everything below untill the footer is our main content areas of the page, each section defined with it's own id under a shared class "eSportsPage"--> 
+		
+		
+<div id="eSportsContent1">
+    <div class="eSportsPage">
+		<h1>WINTER ROYALE</h1>
+		<p>$1,000,000 up for grabs in Fortnite's first open competition with cash prizes</p>
+		<img src="Images/sportRoyale1.jpg" alt="Image of Winter's Royle Poster">
+	</div>
+</div>
+
+
+
+<div id="eSportsContent2">
+	<div class="eSportsPage">
+		<div class="related">
+			<p>Watch Winter Royale Now!!</p>
+		</div>
+		<p>Check out the full Winter Royale Finals on Twitch.tv</p>
+				<div class="twitch">
+					<iframe src="https://player.twitch.tv/?autoplay=false&video=v348251181"></iframe><a href="https://www.twitch.tv/videos/348251181?tt_content=text_link&tt_medium=vod_embed" style="padding:2px 0px 4px; display:block; width:345px; font-weight:normal; font-size:10px; text-decoration:underline;"></a>
+				</div>
+		<div class="related">
+			<p>Our favourite competitive streamers</p>
+		</div>
+					<h2>Liquid 72hrs placement: #2</h2>
+				<div class="twitch">
+					<iframe src="https://player.twitch.tv/?autoplay=false&channel=72hrs" height="378" width="620"></iframe><a href="https://www.twitch.tv/72hrs?tt_content=text_link&tt_medium=live_embed" style="padding:2px 0px 4px; display:block; width:345px; font-weight:normal; font-size:10px; text-decoration:underline;"></a>
+				</div>
+					<h2>Faze FunkBomb placement: #16</h2>
+				<div class="twitch">
+					<iframe src="https://player.twitch.tv/?autoplay=false&channel=funkbomb" height="378" width="620"></iframe><a href="https://www.twitch.tv/funkbomb?tt_content=text_link&tt_medium=live_embed" style="padding:2px 0px 4px; display:block; width:345px; font-weight:normal; font-size:10px; text-decoration:underline;"></a>
+				</div>
+					<h2>LiquidChap placement #18</h2>
+				<div class="twitch">
+					<iframe src="https://player.twitch.tv/?autoplay=false&channel=chap" height="378" width="620"></iframe><a href="https://www.twitch.tv/chap?tt_content=text_link&tt_medium=live_embed" style="padding:2px 0px 4px; display:block; width:345px; font-weight:normal; font-size:10px; text-decoration:underline;"></a>
+				</div>
+		
+	</div>
+</div>
+		
+<div id="eSportsContent3">
+	<div class="eSportsPage">
+		<h2>STAGE TWO: WINTER ROYALE FINALS <br>FORMAT</h2>
+		<p>
+			Qualifying Participants from each region will compete in five (5) Solo matches.   Qualifying Participants will be ranked on a leaderboard based on the following scoring system:<br>
+            <br>
+			Victory Royale: 3 Points<br>
+			2nd-3rd Place: 2 Points<br>
+			4th-10th Place: 1 Point<br>
+            <br>
+			7+ Eliminations: 3 Points<br>
+			5-6 Eliminations: 2 Points<br>
+			3-4 Eliminations: 1 Point<br>
+            <br>
+			Big Bonus: After 7 Eliminations, +1 Point will be added to each elimination.<br>
+            <br>
+			After five (5) matches have concluded, the top 50 Qualifying Participants from each heat (collectively, “Finalists”) will advance to the Winter Royale Finals: Day 2. 
+			Tiebreakers will be determined in the order presented here: total Victory Royales, total eliminations during the Event, Average Placement across all matches, total time spent alive, and finally a Coin Flip. 
+		</p>
+	</div>
+</div>		
+		
+<div id="eSportsContent4">
+	<div class="eSportsPage">
+			<h2>WINTER ROYALE FINALS STANDINGS</h2>
+		<img src="Images/sportStanding.PNG" alt="Image of Winter's Royle's final standings and points">
+	</div>
+</div>
+		
+		
+<!-- And below is our footer with images for social media links -->
+	 
+<footer>
+    <p>Make sure to follow us on social media to keep up with the new changes and information about Fortnite </p>
+<div class="SocialMedia">
+    <div class ="social">
+        <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/FortniteGame/">
+        <img src="Images/homeFacebook.png" alt="Image of Facebook's logo with a link to Fortnite's Facebook page" height="60">
+        </a>
+    </div>
+    <div class="social">
+		<a target="_blank" rel="noopener noreferrer" href="https://twitter.com/fortnitegame">
+        <img src="Images/homeTwitter.png" alt="Image of Twitter's logo with a link to Fortnite's Twitter page" height="60">
+			</a>
+    </div>
+    <div class="social">
+		<a
+		 target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/fortnite/">
+        <img src="Images/homeInstagram.png" alt="Image of Instagram's logo with a link to Fortnite's Instagram page" height="60">
+		</a>
+    </div>
+    <div class="social">
+		<a
+		   target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/user/epicfortnite">
+        <img src="Images/homeYouTube.png" alt="Image of YouTube's logo with a link to Fortnite's YouTube page" height="60">
+			</a>
+    </div>
+        </div>
+</footer>
+        
+</div>
+</body>
+</html>

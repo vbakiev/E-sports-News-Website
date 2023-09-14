@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Everything between the head tag won't be visible for the users including metadata and links to external files and online libraries such as bootstrap and jquery-->
+<head>
+  <title>Fortnite Web Magazine</title>
+  <meta name="description" content="This is a website for Fortnite's community">
+  <meta name="author" content="Veselin Bakiev">
+  <meta name="viewport" content="width = device-width, initial-scale = 1">
+  <meta charset="UTF-8">  
+  <meta name="refresh" content="30"> 
+  <link rel="StyleSheet" type="text/css" href="StyleSheet/style.css">
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+    
+<!-- The body tag is defined below, containing all the visible content for the page-->
+    
+<body>
+    
+    <div class = "grid-containerNews">
+<header>
+	<h1>FortNews</h1> <p>Your daily dose of Fortnite News, Fan Art and more!</p>
+</header>
+
+<!-- This is our navigation html code with <nav> tag with list tag <li> -->
+<nav>
+	<div class="toggle">
+		<i class="fa fa-bars" aria-hidden="true"></i>
+			</div>
+<ul>
+	<li><a href="index.html">HOME</a></li>
+	<li><a href="News.html">NEWS</a></li>
+	<li><a href="eSports.html">ESPORTS</a></li>
+  	<li><a href="fanArt.html">FAN ART</a></li>
+	<li><a href="FAQ.html">FAQ</a>
+</li>
+</ul>
+</nav>
+	<!-- Link to the jquery library with a simple click function for the navigation bar from Reference [2]-->
+		
+<script src="https://code.jquery.com/jquery-3.3.1.js">
+		</script>
+	<script>
+	$(document).ready(function(){
+		$('.toggle').click(function(){
+			$('ul').toggleClass('active');
+		})
+	})
+		</script>
+
+	<!-- Everything below untill the footer is our main content of the page, each section defined with it's own id under a shared class "newsPage"-->  
+<div id="newsContent1">
+    <div class="newsPage">
+		<h3>Fortnite Beats RDR2 and God of War For Game of the Year!
+            </h3>
+		<div class="authors">
+				<p>By CODY GRAVELLE ON NOV 20, 2018</p>
+			</div>
+             <div class="newsImage"><img src="Images/GoldAwards.jpg" alt="Image of Fortnite season 7" width="500">
+				 </div>
+		<p>
+			Fortnite just won a Game of the Year title - in 2018. Epic Games' popular multiplayer shooter claimed the crown at the Golden Joysticks, inexplicably beating out Red Dead Redemption 2 and God of War, a game that many critics believed would be the runaway favorite to sweep up Game of the Year accolades at industry award shows this year.
+
+			On the surface, Fortnite being a contender, and even winning, Game of the Year awards makes sense. <br> The game has become so massively successful that it has genuinely begun to impact industries that are usually adjacent to the video game world, with some professional sports teams banning Fortnite after coaching staff believed it was causing a rift among players. Twitch superstar and dedicated Fortnite streamer Tyler "Ninja" Blevins continues to make a name for himself as one of the wealthiest streamers in the world as well, showcasing the viability and longevity of Epic Games' battle royale monster. 
+		</p>
+	</div>
+        </div>
+
+<div id="newsContent2">
+    <div class="newsPage">
+		<h2>Take to the skies in Season 7! 
+            </h2>
+			<div class="authors">
+				<p>By TOM PHILLIPS ON NOV 15, 2018</p>
+			</div>
+             <div class="newsPlane"><img src="Images/newsSeason7.jpg" alt="Image of the new planes in Fortnite" width="500">
+		</div>
+	<p>
+		Fortnite season 7 will see a ripped Father Christmas invade Battle Royale island with an army of snowmen warriors in biplanes.
+
+		Vast areas of the Fortnite map are getting an icy makeover - including Tilted Towers - with several new areas added, and ziplines between mountainous areas.
+
+		You'll also be able to pilot Santa's planes for yourself. Named the X-4 Stormwing, the biplane is a new five-player vehicle with a mounted machine gun.
+
+		The Battle Pass, meanwhile, will include new vehicle and weapon skins named Wraps, plus more pets (a hamster! a skull!) and toys (an ice puck!). The legendary tier 100 skin is a fearsome chap named The Ice King. Maybe he's Santa's boss?
+		<br>
+		<br>
+		And then there's the new Creative Mode, announced yesterday, which Battle Pass owners get a week's early access to today. There's a lot - will you be paying up again?
+
+		Other changes made at the start of this season include the reworking of balloons (you can now fire and float) and the removal of the following items to the vault: Shadow Stones, Port-a-Fort, Chiller traps, Clinger bombs, the Double Barrel Shotgun and the Shockwave Grenade.
+	</p>
+	</div>
+        </div>
+
+<div id="newsContent3">
+    <div class="newsPage">
+		<h2> Divo into the game with the brand new mythical weapon!
+            </h2>
+		<div class="authors">
+				<p>By SAMUEL ROBERTS, FRASER BROWN ON NOV 10, 2018</p>
+			</div>
+             <div class="newsSword"><img src="Images/newsSword.jpg" alt="Image of the new sword introduced to Fortnite" width="500">
+		</div>
+	<p>
+		Legendary sword Epic teased last night is the Infinity Blade, the titular weapon from the developer's mobile game, and you'll be able to get your hands on it today. It's a mythic sword only found on Polar Peak and only one will appear per match. 
+
+		The Infinity Blade can destroy buildings and kill enemies with one hit, doing 75 damage to humans, and there's an alternate fire that lets players leap great distances and cause plenty of destruction. <br>
+
+		Wielders of the sword get supercharged with magic! and increased health that also regenerates at 1 HP per second, a burst of health with every slain enemy and increased movement speed. 
+
+		You can only carry the sword, however, and nothing else, aside from building materials. If you pick up another item, the sword gets dropped and someone can pinch it right from under your nose.
+	</p>
+            
+	</div>
+        </div>
+		
+<div id="newsContentText1">
+	<div class="newsPage">
+		<div class="related">
+		 <p>RECOMMENDED</p>
+			 </div>
+		<p>All unreleased Fortnite cosmetics</p>
+		<img src="Images/newsUnreleased.png" alt="Image Fortnite's unreleased items" width="600">
+	<div class="btn">
+		<button>Click to learn more</button>
+	</div>
+ <div class="Panel">
+	 	<p>
+			 The final Fortnite v7.10 Content Update has passed. Before the next significant update arrives and brings more, here is a look at all unreleased cosmetics.
+
+			 Many Fortnite fans are interested in seeing what Epic has up their sleeves, before it is officially released or revealed. With every patch, dataminers scour the files in search of new assets. It’s almost certain that the following updates will bring even more cosmetic assets, stay tuned.
+			 <br>
+			 <br>
+			 Vision (Rare Pickaxe)  ?? V-Bucks Unending gaze.
+			 <br>
+			 <br>
+			 Helium (Uncommon Glider)  ?? V-Bucks Lighter than air.
+	 	</p>
+		</div>
+	<p>Fortnite Update Adds Suppressed Sniper</p>
+		<img src="Images/newsSniper.jpg" alt="Image of Fortnite's new supressed sniper" width="600">
+		<div class="btn1">
+		<button>Click to learn more</button>
+	</div>
+		<div class="Panel1">
+	 	<p>
+			Fortnite fans will soon have a new weapon to get to grips with, as the battle royale title’s in-game news screen was officially updated to announce the arrival of a new version of the sniper rifle.
+			Fortnite already has a wide range of sniper rifles, from the Bolt Action Sniper to the Hunting Rifle, which is a sniper rifle with the scope removed.
+
+			In addition to the rifles already in the game, Epic Games are introducing the Suppressed Sniper Rifle, which will mark the first time that a suppressed version of the sniper rifle will make an appearance in the game		
+	 	</p>
+		</div>
+		<p>This week's Fortnite challenges</p>
+		<img src="Images/newsChallenges.jpg" alt="Fortnite's challenges" width="600">
+		<div class="btn2">
+		<button>Click to learn more</button>
+	</div>
+		<div class="Panel2">
+	 	<p>
+			It's time to find some gnomes. If you're new to Fortnite, gnome hunts have been one of the most consistent challenges in the game, for whatever reason. We've had straight-up hidden gnomes, we've had laughing gnomes, we've had hungry gnomes: the Fortnite island is in no manner short on gnomes, and that's just all there is to it. This week we're embracing the winter theme, like you might guess. The Season 7, Week 6 challenges are live, and so read on for where to find 7 chilly gnomes to search in Fortnite: Battle Royale, complete with guide, map and locations.	
+	 	</p>
+		</div>
+	</div>
+</div>
+		
+<!-- Basic jquery funtion to toggle the text inside the "Panel" class when user clicks on the button with id "#btn"-->  
+<script>
+	$(function(){
+		$('.btn').on('click', function(){
+			$('.Panel').toggle();
+		});
+});
+</script>
+		
+<script>
+	$(function(){
+		$('.btn1').on('click', function(){
+			$('.Panel1').toggle();
+		});
+});
+</script>
+
+<script>
+	$(function(){
+		$('.btn2').on('click', function(){
+			$('.Panel2').toggle();
+		});
+});
+</script>
+		
+<!-- And below is our footer with images for social media links-->
+		
+<footer>
+    <p>Make sure to follow us on social media to keep up with the new changes and information about Fortnite </p>
+<div class="SocialMedia">
+    <div class ="social">
+        <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/FortniteGame/">
+        <img src="Images/homeFacebook.png" alt="Image of Facebook's logo with a link to Fortnite's Facebook page" height="60">
+        </a>
+    </div>
+    <div class="social">
+		<a target="_blank" rel="noopener noreferrer" href="https://twitter.com/fortnitegame">
+        <img src="Images/homeTwitter.png" alt="Image of Twitter's logo with a link to Fortnite's Twitter page" height="60">
+			</a>
+    </div>
+    <div class="social">
+		<a
+		 target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/fortnite/">
+        <img src="Images/homeInstagram.png" alt="Image of Instagram's logo with a link to Fortnite's Instagram page" height="60">
+		</a>
+    </div>
+    <div class="social">
+		<a
+		   target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/user/epicfortnite">
+        <img src="Images/homeYouTube.png" alt="Image of YouTube's logo with a link to Fortnite's YouTube page" height="60">
+			</a>
+    </div>
+        </div>
+</footer>
+        
+</div>
+</body>
+</html>

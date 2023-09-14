@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Everything between the head tag won't be visible for the users including metadata and links to external files and online libraries such as bootstrap and jquery-->
+<head>
+	<title>Fortnite Web Magazine</title>
+  	<meta name="description" content="This is a website for Fortnite's community">
+  	<meta name="author" content="Veselin Bakiev">
+  	<meta name="viewport" content="width = device-width, initial-scale = 1">
+    <meta charset="UTF-8">
+  	<meta name="refresh" content="30">
+  	<link rel="StyleSheet" type="text/css" href="StyleSheet/style.css">
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+    
+<!-- The body tag is defined below, containing all the visible content for the page-->
+    
+<body>
+    
+    <div class = "grid-containerFAQ">
+<header>
+	<h1>FortNews</h1> 
+	<p>Your daily dose of Fortnite News, Fan Art and more!</p>
+</header>
+
+<!-- This is our navigation html code with <nav> tag with list tag <li> -->
+<nav>
+	<div class="toggle">
+		<i class="fa fa-bars" aria-hidden="true"></i>
+			</div>
+<ul>
+  	<li><a href="index.html">HOME</a></li>
+  	<li><a href="News.html">NEWS</a></li>
+  	<li><a href="eSports.html">ESPORTS</a></li>
+	<li><a href="fanArt.html">FAN ART</a></li>
+	<li><a href="FAQ.html">FAQ</a></li>
+	</ul>
+</nav>
+		
+	<!-- Link to the jquery library with a simple click function for the navigation bar from Reference [2]  -->
+<script src="https://code.jquery.com/jquery-3.3.1.js">
+		</script>
+	<script>
+	$(document).ready(function(){
+		$('.toggle').click(function(){
+			$('ul').toggleClass('active');
+		})
+	})
+		</script>
+
+<!-- Everything below untill the footer is our main content of the page, each section defined with it's own id under a shared class "faqPage"--> 
+		
+		
+<div id="faqContent1">
+    <div class="faqPage">
+		<h2>FAQ</h2>
+	</div>
+</div>
+
+
+
+<div id="faqContent2">
+	<div class="faqPage">
+		<div class="related">
+			<p>Popular Questions</p>
+		</div>
+		<h2>Where can I download Fortnie Battle Royale?</h2>
+		<img src="Images/faqImage.jpg" alt="Image of Fortnite's poster">
+		<div class="btn">
+			
+    
+        <form>
+          <button formaction="https://www.epicgames.com/fortnite/en-US/battle-pass/season-7">Download Fortnite Battle Royale Now</button>
+        </form>
+            
+		<h2>My friend isn't on the same platform can I play with him/her?</h2>
+		<p>Yes, Fortnite supports cross-platform and you can join the the battlefiled with your friends with  different gaming platforms.</p>
+		<img src="Images/faqCrossPlay.jpg" alt="Image of Fortnite's cross platform">
+	</div>
+	</div>
+</div>
+		
+<div id="faqContent3">
+    <div class="faqPage">
+	<p>
+		
+	<b>Q:</b> Do I need Xbox Live Gold to play Fortnite Battle Royale? <br>
+	<b>A:</b> Yes. You do need Xbox Live Gold in order to play Fortnite Battle Royale on Xbox.<br>
+	<br>
+		
+	<b>Q:</b> Do I need PlayStation Plus to play Fortnite Battle Royale?<br>
+	<b>A:</b> No. You do not need PS Plus in order to play Fortnite Battle Royale on PlayStation.<br>
+    <br>
+		
+	<b>Q:</b> Do I need Nintendo Switch Online to play Fortnite Battle Royale?<br>
+	<b>A:</b> No. You do not need Nintendo Switch Online in order to play Fortnite Battle Royale on Switch.<br>
+	<br>
+	
+	<b>Q:</b> How do you handle teamers in solo play?<br>
+	<b>A:</b> We’ve built a system to automatically ban teamers in solo play.<br>
+    <br>
+	
+	<b>Q:</b> How are you handling cheaters (aimbots, overlays, etc)?<br>
+	<b>A:</b> We take cheating very seriously on both a legal and game development front. We don’t want to tip our hand by talking in-depth about how we combat cheating.<br>
+	<br>
+
+	<b>Q:</b> I would like to report a player, where can I do so?<br>
+	<b>A:</b>You can use the in-game feedback tool located in the Main Menu. There is also an option to report a player in-game when spectating them.<br>
+	<br>
+
+	<b>Q:</b> Will you add a first-person option?<br>
+	<b>A:</b> No. We’re not planning to add a first-person option. We don’t feel it fits with the design style of Fortnite. We may revisit in the future.<br>
+	<br>
+
+	<b>Q:</b> Will you add more maps?<br>
+	<b>A:</b> Yes, but not right away. Currently, we’ll continue making improvements to our existing map, including adding more points of interest.<br>
+	<br>
+		
+	<b>Q:</b> Will Fortnite Battle Royale be pay-to-win?<br>
+	<b>A:</b> No. We will not sell items that give a competitive advantage.<br>
+    <br>
+	
+	<b>Q:</b> How do I change my preferred language?<br>
+	<b>A:</b> Once in-game, navigate to the drop-down Options menu on the top right of the client.<br><br>
+	1.Click the Settings gear icon.<br><br>
+    2. Select the Game tab at the top of the screen.<br><br>
+	3.Confirm your preferred Language in the Region section.<br><br>
+	4.Once you’ve finished, be sure to Apply your changes.<br><br>
+		
+	
+</p>
+	</div>
+</div>
+		
+<!-- And below is our footer with images for social media links -->
+	 
+<footer>
+    <p>Make sure to follow us on social media to keep up with the new changes and information about Fortnite </p>
+<div class="SocialMedia">
+    <div class ="social">
+        <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/FortniteGame/">
+        <img src="Images/homeFacebook.png" alt="Image of Facebook's logo with a link to Fortnite's Facebook page" height="60">
+        </a>
+    </div>
+    <div class="social">
+		<a target="_blank" rel="noopener noreferrer" href="https://twitter.com/fortnitegame">
+        <img src="Images/homeTwitter.png" alt="Image of Twitter's logo with a link to Fortnite's Twitter page" height="60">
+			</a>
+    </div>
+    <div class="social">
+		<a
+		 target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/fortnite/">
+        <img src="Images/homeInstagram.png" alt="Image of Instagram's logo with a link to Fortnite's Instagram page" height="60">
+		</a>
+    </div>
+    <div class="social">
+		<a
+		   target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/user/epicfortnite">
+        <img src="Images/homeYouTube.png" alt="Image of YouTube's logo with a link to Fortnite's YouTube page" height="60">
+			</a>
+    </div>
+        </div>
+</footer>
+        
+</div>
+</body>
+</html>
